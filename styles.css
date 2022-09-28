@@ -1,5 +1,54 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
 .sidebar{
     color: white;
     border: 1px solid black;
     background-color: rgb(83, 121, 190);
+    display: grid;
+    grid-template-rows: 1/7;
+}
+
+.header{
+    color: black;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.header>.bar{
+    padding: 10px;
+    background-color: grey;
+    border-radius: 200px;
+}
+
+.subheader{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.subheader>.firsthalf{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.subheader>.secondhalf{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projectContainer{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.endbar{
+    border: 1px solid black;
+}
+
+.announcements{
+    border: 1px solid black
 }
